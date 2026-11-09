@@ -1,0 +1,6 @@
+services:
+  api:
+    image: ghcr.io/hajer1406/campus-tasks:${IMAGE_TAG}
+    ports: ["8080:8080"]
+    env_file: [.env.staging]
+    restart: unless-stopped
